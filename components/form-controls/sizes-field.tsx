@@ -1,5 +1,4 @@
-// eslint-disable-next-line @typescript-eslint/ban-ts-comment
-// @ts-nocheck
+
 import { Button, Radio, Text } from '@nextui-org/react';
 import * as React from 'react';
 import { Controller } from 'react-hook-form';
@@ -34,6 +33,8 @@ export default function SizeField(props: SizeFieldProps) {
               onChange={onChange}
               onBlur={onBlur}
               css={{ position: 'relative' }}
+              // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+              // @ts-ignore
               row
             >
               {product.sizes.map((size: string, index: number) => {

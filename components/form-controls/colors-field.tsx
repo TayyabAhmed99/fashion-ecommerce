@@ -1,6 +1,3 @@
-// eslint-disable-next-line @typescript-eslint/ban-ts-comment
-// @ts-nocheck
-
 import { Button, Radio, Text } from '@nextui-org/react';
 import * as React from 'react';
 import { Controller } from 'react-hook-form';
@@ -35,6 +32,8 @@ export default function ColorsField(props: ColorsFieldProps) {
               onChange={onChange}
               onBlur={onBlur}
               css={{ position: 'relative' }}
+              // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+              // @ts-ignore
               row
             >
               {product.colors.map((color: string, index: number) => (

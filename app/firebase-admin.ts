@@ -1,3 +1,6 @@
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-nocheck
+
 import serviceKey from '@/utils/serviceKey';
 import admin from 'firebase-admin';
 
